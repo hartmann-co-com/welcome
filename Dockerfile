@@ -2,7 +2,7 @@ FROM node:latest AS build
 
 WORKDIR /app
 COPY ./app/welcome .
-# build commands
+
 RUN npm install
 RUN npm run build --prod
 
